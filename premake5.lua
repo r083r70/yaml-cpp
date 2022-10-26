@@ -2,10 +2,9 @@ project "yaml-cpp"
     kind "StaticLib"
     language "C++"
     cppdialect "C++17"
-    staticruntime "off"
 
-    targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-    objdir ("obj/" .. outputdir .. "/%{prj.name}")
+	targetdir ("bin/%{cfg.buildcfg}")
+	objdir ("obj/%{cfg.buildcfg}" )
 
     includedirs { "include" }
     files

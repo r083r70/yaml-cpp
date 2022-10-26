@@ -1,3 +1,15 @@
 build/
 /tags
 /bazel-*
+
+## Build folders
+bin/
+obj/
+
+# VS files
+*.vcxproj
+*.vcxproj.*
+
+# Make files
+Makefile
+
